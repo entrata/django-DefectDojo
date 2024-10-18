@@ -19,7 +19,7 @@ services:
     volumes:
       - defectdojo_media:/usr/share/nginx/html/media
     ports:
-      - target: 8443  # Change the target to HTTPS (port 443 internally)
+      - target: 443  # Change the target to HTTPS (port 443 internally)
         published: 443 # Expose port 443 externally
         protocol: tcp
         mode: host  # Port is mapped on the host
